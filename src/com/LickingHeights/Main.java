@@ -4,7 +4,9 @@ public class Main {
 
     public static void main(String[] args) {
         poem();
-        
+        System.out.println(" ");
+        System.out.println("So, which day of the week to you come from?");
+        System.out.println("What month were you born in?(Enter as number)");
     }
     public static void poem(){
         System.out.println("There is a nursery rhyme that goes like this....");
