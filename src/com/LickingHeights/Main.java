@@ -3,7 +3,8 @@ package com.LickingHeights;
 public class Main {
 
     public static void main(String[] args) {
-
+        poem();
+        
     }
     public static void poem(){
         System.out.println("There is a nursery rhyme that goes like this....");
