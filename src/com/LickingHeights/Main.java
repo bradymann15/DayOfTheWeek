@@ -10,7 +10,7 @@ public class Main {
         poem();
         System.out.println(" ");
         System.out.println("So, which day of the week to you come from?");
-        birthmonth(keyboard);
+        birthdate(keyboard);
 
     }
     public static void poem(){
@@ -26,11 +26,15 @@ public class Main {
         System.out.println("Is fair and wise and good in every way.");
         }
 
-    public static int birthmonth(Scanner keyboard){
+    public static void birthdate(Scanner keyboard){
         System.out.println("What is your birth month?");
         String birth = keyboard.nextLine();
         System.out.println("Now, enter your birth month as a number");
         int month = keyboard.nextInt();
+        System.out.println("What is the date of your birth?");
+        int date = keyboard.nextInt();
+        System.out.println("What year were you born on?");
+        int year = keyboard.nextInt();
         switch(month){
             case 4:
             case 6:
@@ -43,9 +47,11 @@ public class Main {
                 break;
                 default:
                     System.out.println(birth+" has 31 days in it");
+                    break;
 
         }
-        return month;
+        int dayoftheweek = 
+
     }
 
 
