@@ -10,6 +10,7 @@ public class Main {
         poem();
         System.out.println(" ");
         System.out.println("So, which day of the week to you come from?");
+        birthmonth(keyboard);
 
     }
     public static void poem(){
@@ -41,5 +42,6 @@ public class Main {
                     System.out.println("Your month has 31 days");
 
         }
+        return month;
     }
 }
