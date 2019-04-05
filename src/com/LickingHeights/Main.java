@@ -38,7 +38,7 @@ public class Main {
                 System.out.println("February has 28 days, except on a leap year, where it has 29 days.");
                 break;
                 default:
-                    System.out.println("Your month ");
+                    System.out.println("Your month has 31 days");
 
         }
     }
