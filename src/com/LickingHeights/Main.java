@@ -25,23 +25,32 @@ public class Main {
         System.out.println("But the child born on the Sabbath Day,");
         System.out.println("Is fair and wise and good in every way.");
         }
+
     public static int birthmonth(Scanner keyboard){
-        System.out.println("What is your birth month?(Enter as number)");
+        System.out.println("What is your birth month?");
+        String birth = keyboard.nextLine();
+        System.out.println("Now, enter your birth month as a number");
         int month = keyboard.nextInt();
         switch(month){
             case 4:
             case 6:
             case 9:
             case 11:
-                System.out.println("Your month has 30 days");
+                System.out.println(birth+" has 30 days in it");
                 break;
             case 2:
-                System.out.println("February has 28 days, except on a leap year, where it has 29 days.");
+                System.out.println(birth+" has 28 days in it, and 29 days on a leap year");
                 break;
                 default:
-                    System.out.println("Your month has 31 days");
+                    System.out.println(birth+" has 31 days in it");
 
         }
         return month;
     }
+
+
+
+
+
+
 }
