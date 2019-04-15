@@ -10,7 +10,9 @@ public class Main {
         poem();
         System.out.println(" ");
         System.out.println("So, which day of the week to you come from?");
-        birthdate(keyboard);
+        dayOfWeekBorn(keyboard);
+
+
 
     }
     public static void poem(){
@@ -26,15 +28,16 @@ public class Main {
         System.out.println("Is fair and wise and good in every way.");
         }
 
-    public static void birthdate(Scanner keyboard){
+    public static void dayOfWeekBorn(Scanner keyboard){
         System.out.println("What is your birth month?");
         String birth = keyboard.nextLine();
         System.out.println("Now, enter your birth month as a number");
         int month = keyboard.nextInt();
-        System.out.println("What is the date of your birth?");
-        int date = keyboard.nextInt();
-        System.out.println("What year were you born on?");
-        int year = keyboard.nextInt();
+        if (month == 1){
+            month = 13;
+        }
+        else if (month == 2){
+            month = 14;}
         switch(month){
             case 4:
             case 6:
@@ -50,7 +53,42 @@ public class Main {
                     break;
 
         }
-        int dayoftheweek = 
+        System.out.println("What is the date of your birth?");
+        int date = keyboard.nextInt();
+        System.out.println("What year were you born on?");
+        int year = keyboard.nextInt();
+        int century = year/100;
+        int yearOfCentury = year%100;
+
+        String dayOfTheWeek;
+        int dayoftheweek =((date+((13*(month+1))/5)+yearOfCentury+(yearOfCentury/4)+(century/4)+(5*century))%7);
+        switch(dayoftheweek){
+            case 0:
+                 dayOfTheWeek = "Saturday";
+                break;
+            case 1:
+                dayOfTheWeek = "Sunday";
+                break;
+            case 2:
+                dayOfTheWeek = "Monday";
+                break;
+            case 3:
+                dayOfTheWeek = "Tuesday";
+                break;
+            case 4:
+                dayOfTheWeek = "Wednesday";
+                break;
+            case 5:
+                dayOfTheWeek = "Thursday";
+                break;
+            default:
+                dayOfTheWeek = "Friday";
+
+        }
+        System.out.println(dayoftheweek);
+        }
+
+
 
     }
 
@@ -59,4 +97,4 @@ public class Main {
 
 
 
-}
+
