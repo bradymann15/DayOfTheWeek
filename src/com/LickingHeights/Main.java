@@ -83,6 +83,7 @@ public class Main {
                 break;
             default:
                 dayOfTheWeek = "Friday";
+                break;
 
         }
         System.out.println(dayoftheweek);
