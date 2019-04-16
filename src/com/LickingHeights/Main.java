@@ -57,6 +57,9 @@ public class Main {
         int date = keyboard.nextInt();
         System.out.println("What year were you born on?");
         int year = keyboard.nextInt();
+        if (month == 13 || month == 14){
+            year = year-1;
+        }
         int century = year/100;
         int yearOfCentury = year%100;
         String dayOfTheWeek;
@@ -103,15 +106,16 @@ public class Main {
                 break;
             case "Saturday":
                 System.out.println("You work hard for a living");
+                break;
             case "Sunday":
-                System.out.println("You are fair and wise and good in everyway");
+                System.out.println("You are fair and wise and good in every way");
                 break;
         }
+        
 
 
-        System.out.println(dayoftheweek);
 
-        }
+    }
 
 
 
