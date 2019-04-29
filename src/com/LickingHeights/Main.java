@@ -11,7 +11,9 @@ public class Main {
         System.out.println(" ");
         System.out.println("So, which day of the week to you come from?");
         birthdateweekday(keyboard);
-        tryAgain(keyboard);
+        System.out.println("Thank you for using the Birthdate Day of the Week Calculator!");
+        
+
 
 
 
@@ -115,17 +117,7 @@ public class Main {
                 break;
         }
     }
-    public static void tryAgain(Scanner keyboard) {
-        System.out.println("Would you like to try out a different date?");
-        String value = keyboard.nextLine();
-        if (value == "yes " || value == "Yes") {
-            Boolean trueFalse = true;
-            do{birthdateweekday(keyboard);}while(trueFalse == true);
-        } else if (value == "no" || value == "No") {
-            Boolean trueFalse = false;
-            System.exit(0);
-        } else
-            System.out.println("Please only say yes or no");
+
 
     }
 
@@ -136,7 +128,7 @@ public class Main {
 
 
 
-    }
+
 
 
 
